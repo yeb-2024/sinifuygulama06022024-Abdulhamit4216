@@ -24,6 +24,7 @@ public class HomePage implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == profileButton){
+            frame.dispose(); // Sayfayı Kapatmaya Yarar.
             ProfilePage profilePage = new ProfilePage();
         }
     }
